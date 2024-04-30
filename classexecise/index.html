@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Page title</title>
+<link rel="stylesheet" href="styles.css"
+</head>
+<header>
+<h1 id="header">Clothing store</h1>
+</header>
+<section>
+    <nav>
+        <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Articles</a></li>
+        </ul>
+        </nav>
+        <article>
+        <h2>Article heading</h2>
+        <img src="OIP (1).jpg" alt=" coming soon" width="400" height="500">
+        <p style="color: blueviolet;">Paragraph...</p>
+        <a href="https://www.google.com/">More information...</a>
+        </article>
+        <aside id="aside">
+        <h2>Related</h2>
+        <ul>
+        <li><a href="#">Article 1</a></li>
+        <li><a href="#">Article 2</a></li>
+        </ul>
+        </aside>
+        </section>
+        <footer>
+        <p style="color: aquamarine;">@copyright 2050 by nobody. all rights reversed</p>
+        </footer>
+        <button style="color: brown;" id="button"  onclick="helloWorld()">Clickme</button>
+        <script>
+
+        function helloWorld(){
+        alert('Your order will be shipped soon')
+            document.getElementById("header").innerText ='Hello JavaScript';
+            document.getElementById("aside").style.backgroundColor ='green';
+            document.getElementById("button").style.backgroundColor='blue';
+        }
+
+        </script>
+        </body>
+        </html>

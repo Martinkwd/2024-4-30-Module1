@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+    <title>Module 1 Exercise 3</title>
+    <style>
+    body { font-family: sans-serif; margin:0; }
+    .container { display: flex; min-height:
+100vh; align-items: stretch; }
+    .column { background: goldenrod; display:
+flex; flex-direction: column; justify-content:
+center; align-items: center; flex:1; }
+    button {   background-color: purple;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+    }
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <div class="column" id="column1">
+            <h1 id="heading1">Hello</h1>
+            <button onclick="hello()">Change Me</button>
+
+        </div>
+        <div class="column" id="column2">
+            <h1 id="heading2">World</h1>
+            <button onclick="world()">Change Me</button>
+        </div>
+    </div>  
+    
+    <div class="container">
+        <div class="column" id="column3">
+            <h1 id="heading3">Change me</h1>
+            <input type="text" id="text3">
+            <button onclick="bye()">Change Me</button>
+
+        </div>
+        <div class="column" id="column4">
+            <h1 id="heading4">Change me</h1>
+            <input type="text" id="text4">
+            <button onclick="hi()">Change Me</button>
+        </div>
+    </div>  
+    <script>
+
+        function hello(){
+            document.getElementById("column1").style.backgroundColor ='blue';
+            document.getElementById("column1").innerText ='Hello';
+        }
+        function world(){
+            document.getElementById("column2").style.backgroundColor ='red';
+            document.getElementById("column2").innerText ='Martin';
+        }
+        function hi(){
+            document.getElementById("heading4").innerText=document.getElementById("text4").value;
+        }
+        function bye(){
+            document.getElementById("heading3").innerText=document.getElementById("text3").value;
+        }
+
+        </script>
+</body>
+</html>
